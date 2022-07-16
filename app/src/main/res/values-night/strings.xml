@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="image">image</string>
+    <string name="successfully_delete">Berhasil menghapus Histori!</string>
+</resources>

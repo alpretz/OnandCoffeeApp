@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Onand Coffee</string>
+
+    //Login
+    <string name="login_msg">Login ke akun Anda</string>
+    <string name="username_email">Username / Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="have_account">Already have an account? Login</string>
+    <string name="please_fill">Please fill all fields!</string>
+    <string name="enter_valid_email">Please enter valid email!</string>
+    <string name="password_short">Password to short! (min: 6 characters)</string>
+
+    //Home
+    <string name="history">Riwayat</string>
+    <string name="menu">Menu</string>
+    <string name="meja">Meja</string>
+    <string name="kategori_menu">Menu</string>
+    <string name="history_transaksi">Riwayat Transaksi</string>
+    <string name="stok_barang">Stok Barang</string>
+    <string name="logout">Logout</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">close</string>
+    <string name="press_back_to_exit">Tekan kembali untuk keluar!</string>
+
+    //Table
+    <string name="warning">Peringatan</string>
+    <string name="set_unoccupied">Set meja ini menjadi kosong?</string>
+
+    //Contact
+
+    //Stock
+    <string name="stock_name">Nama Stok</string>
+    <string name="id_request">ID Request</string>
+    <string name="metric">Metrik</string>
+    <string name="initial_stock">Stok Awal</string>
+    <string name="in_stock">Masuk</string>
+    <string name="out_stock">Keluar</string>
+    <string name="total_stock">Total Stok</string>
+    <string name="add_stock">Tambah Stok</string>
+
+    //Menu
+    <string name="coffee">Kopi</string>
+    <string name="non_coffee">Non Kopi</string>
+    <string name="add_menu">Tambah Menu</string>
+    <string name="menu_name">Nama</string>
+    <string name="menu_desc">Deskrpsi</string>
+    <string name="menu_price">Harga</string>
+    <string name="menu_order">Pesan</string>
+    <string name="menu_coffee">Kopi?</string>
+    <string name="order_empty">Anda belum memilih menu!</string>
+
+    //Order
+    <string name="buyer_name">Nama Pembeli</string>
+    <string name="no_table">No. Meja</string>
+    <string name="cash">Total Uang</string>
+    <string name="rp">Rp.%s</string>
+    <string name="rp_">Rp.</string>
+
+    //History
+    <string name="table_">Meja %s</string>
+    <string name="detail">Detail</string>
+    <string name="set_paid">Bayar Sekarang</string>
+    <string name="order_menu">Tambah <Pesan></Pesan>an</string>
+
+    //Category
+    <string name="category">Kategori</string>
+    <string name="save">Simpan</string>
+    <string name="delete">Hapus</string>
+    <string name="goods_stock">Stok Barang</string>
+    <string name="image">Gambar</string>
+    <string name="successfully_delete">Berhasil menghapus Riwayat!</string>
+    <string name="edit">Edit</string>
+    <string name="edit_order">Edit Pesanan</string>
+    <string name="success_update">Berhasil memperbarui Riwayat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>
