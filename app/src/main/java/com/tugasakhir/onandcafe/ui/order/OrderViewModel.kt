@@ -79,8 +79,8 @@ class OrderViewModel(
             when {
                 /// jika table tidak ada yang dipilih, alias kosong kolomnya, maka muncul toast dibawah
                 table == null -> {
-                    onError.postValue("Table number not found!")
-                    showToast(context, "Table number not found!", Toast.LENGTH_SHORT)
+                    onError.postValue("No Meja tidak ditemukan!")
+                    showToast(context, "No Meja tidak ditemukan!", Toast.LENGTH_SHORT)
                 }
                 /// jika user mengupdate order, namun tidak merubah posisi table, maka tetap bisa update order di table yang sama
                 table.isOccupied -> {

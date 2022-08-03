@@ -19,6 +19,9 @@ interface MenuDao {
     @Query("select * from menu where menuId=:id")
     suspend fun getById(id: Int): Menu?
 
+    @Query("SELECT * FROM menu WHERE name LIKE '%' || :nameQuery || '%' LIMIT 5")
+    fun getListNameMenu(nameQuery: String): LiveData<List<Menu>>
+
     @Delete
     suspend fun delete(menu: Menu)
 }

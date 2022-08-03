@@ -2,8 +2,10 @@ package com.tugasakhir.onandcafe.ui.menu.add
 
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.widget.addTextChangedListener
 import androidx.lifecycle.ViewModelProvider
 import com.tugasakhir.onandcafe.R
 import com.tugasakhir.onandcafe.base.showToast
@@ -18,6 +20,12 @@ class MenuAddActivity : AppCompatActivity() {
     private lateinit var viewModel: MenuViewModel
 
     private var menu: Menu? = null
+
+    private val listMenuHistory = ArrayList<String>()
+
+    private val autoSearchMenuHistoryAdapter by lazy {
+        ArrayAdapter(binding.root.context, R.layout.list_item, listMenuHistory)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,6 +53,13 @@ class MenuAddActivity : AppCompatActivity() {
             }
         }
 
+        binding.etNameMenu.setAdapter(autoSearchMenuHistoryAdapter)
+        binding.etNameMenu.addTextChangedListener {
+            if (it.toString().isNotEmpty()) {
+                getHistoryMenuName(it.toString())
+            }
+        }
+
         binding.apply {
             btnMenuSave.setOnClickListener { saveData() }
             btnMenuDelete.setOnClickListener {
@@ -66,7 +81,7 @@ class MenuAddActivity : AppCompatActivity() {
     private fun saveData() {
         binding.apply {
             val categoryEt = tilMenuCategory.editText?.text
-            val nameEt = tilMenuName.editText?.text
+            val nameEt = etNameMenu.text
             val descEt = tilMenuDesc.editText?.text
             val priceEt = tilMenuPrice.editText?.text
             val coffeeCk = ckCoffee.isChecked
@@ -98,6 +113,18 @@ class MenuAddActivity : AppCompatActivity() {
 
                 finish()
             }
+        }
+    }
+
+    private fun getHistoryMenuName(nameMenuQuery: String) {
+        viewModel.getListNameMenuHistory(nameMenuQuery)?.observe(this) {
+            listMenuHistory.clear()
+            autoSearchMenuHistoryAdapter.clear()
+            it.forEach { menu ->
+                listMenuHistory.add(menu.name)
+            }
+            autoSearchMenuHistoryAdapter.addAll(listMenuHistory)
+            binding.etNameMenu.showDropDown()
         }
     }
 }

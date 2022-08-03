@@ -111,7 +111,7 @@ class HistoryEditActivity : AppCompatActivity() {
 
                             adapter.getMenus().forEach { menu ->
                                 /// looping untuk mengupdate menu
-                                /// todo : disini saya masih tidak mengetahui bagaimana query untuk menghapus menu orderan, jadi ketika user ingin menghapus menu, silahkan hapus orderan saja, jangan hapus melalui edit, karena belum berhasil menghapus menu melalui edit order
+                                ///  hapus menu
                                 viewModel
                                     .updateOrderWithMenu(
                                         orderNew.orderId,

@@ -6,8 +6,14 @@
         <entry key="..\:/ACER NITRO/Ngoding/TA/OnandCafe/app/src/main/res/layout/activity_history_detail.xml" value="0.1334853090172239" />
         <entry key="..\:/ACER NITRO/Ngoding/TA/OnandCafe/app/src/main/res/layout/activity_home.xml" value="0.2563405797101449" />
         <entry key="..\:/ACER NITRO/Ngoding/TA/OnandCafe/app/src/main/res/layout/activity_login.xml" value="0.1265625" />
+        <entry key="..\:/ACER NITRO/Ngoding/TA/OnandCafe/app/src/main/res/layout/activity_menu.xml" value="0.1" />
+        <entry key="..\:/ACER NITRO/Ngoding/TA/OnandCafe/app/src/main/res/layout/activity_menu_add.xml" value="0.1" />
         <entry key="..\:/ACER NITRO/Ngoding/TA/OnandCafe/app/src/main/res/layout/activity_register.xml" value="0.2563405797101449" />
         <entry key="..\:/ACER NITRO/Ngoding/TA/OnandCafe/app/src/main/res/layout/fragment_history.xml" value="0.1265625" />
+        <entry key="..\:/ACER NITRO/Ngoding/TA/OnandCafe/app/src/main/res/layout/fragment_table.xml" value="0.8800000000000001" />
+        <entry key="..\:/ACER NITRO/Ngoding/TA/OnandCafe/app/src/main/res/layout/item_list_history.xml" value="0.27447916666666666" />
+        <entry key="..\:/ACER NITRO/Ngoding/TA/OnandCafe/app/src/main/res/layout/item_list_table.xml" value="0.264" />
+        <entry key="..\:/ACER NITRO/Ngoding/TA/OnandCafe/app/src/main/res/layout/list_item.xml" value="0.2" />
       </map>
     </option>
   </component>

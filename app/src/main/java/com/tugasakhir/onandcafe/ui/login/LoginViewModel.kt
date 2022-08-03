@@ -18,6 +18,7 @@ class   LoginViewModel(
             userDao?.insertUser(
                 User(1, "admin", "admin@admin.com", "admin123", true)
             )
+
         }
     }
 

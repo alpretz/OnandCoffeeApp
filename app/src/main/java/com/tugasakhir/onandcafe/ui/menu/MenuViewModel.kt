@@ -30,4 +30,6 @@ class MenuViewModel(
     }
 
     fun getIsAdmin(): Boolean = prefUtils.getFromPrefBoolean(PrefUtils.AUTH_ADMIN_PREF)
+
+    fun getListNameMenuHistory(menuQuery: String) = dao?.getListNameMenu(menuQuery)
 }

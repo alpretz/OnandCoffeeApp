@@ -9,9 +9,9 @@
     <string name="username">Username</string>
     <string name="email">Email</string>
     <string name="have_account">Already have an account? Login</string>
-    <string name="please_fill">Please fill all fields!</string>
-    <string name="enter_valid_email">Please enter valid email!</string>
-    <string name="password_short">Password to short! (min: 6 characters)</string>
+    <string name="please_fill">Silahkan isi semua kolom</string>
+    <string name="enter_valid_email">Email anda salah silahkan masukan email yang benar!</string>
+    <string name="password_short">Password terlalu pendek! (min: 6 karakter)</string>
 
     //Home
     <string name="history">Riwayat</string>

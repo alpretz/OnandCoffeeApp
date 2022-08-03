@@ -64,14 +64,14 @@ class HistoryDetailActivity : AppCompatActivity() {
                 finish()
             }
 
-            /// delete history using order.id
+            /// delete history menggunakan order.id
             btnDelete.setOnClickListener {
                 viewModel.deleteHistory(order.orderId.toString(), order.tableNo)
                 showToast(applicationContext, getString(R.string.successfully_delete), Toast.LENGTH_SHORT)
                 finish()
             }
 
-            /// edit history by passing Order and Menu object and user re-order product
+            /// edit history
             btnEdit.setOnClickListener {
                 val menuList = ArrayList<Menu>(menus)
                 val intent = Intent(applicationContext, HistoryEditActivity::class.java)
